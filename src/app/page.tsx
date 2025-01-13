@@ -17,13 +17,19 @@ export default function Home() {
       </div>
 
       {/* About */}
-      <Image src="/açougue.png" alt="açougue" id="container__about" width={500} height={300} />
-      <div className="textos">
-        <h1>SOBRE NÓS</h1>
-        <p>Desde 1999, a Casa de Carnes Rodeio II tem o compromisso de oferecer a melhor carne para você e sua família.
-        Nossos produtos são selecionados e preparados com todo o cuidado e carinho que você merece.
-        Venha nos visitar e conheça a qualidade dos nossos produtos.</p>
+      <div className="container__about">
+        <div className="about__left">
+          <Image src="/açougue.png" alt="açougue" id="container__about__" width={500*3} height={500} />
+        </div>
+        <div className="about__right">
+          <h1>SOBRE NÓS</h1>
+          <p>Desde 1999, a Casa de Carnes Rodeio II tem o compromisso de oferecer a melhor carne para você e sua família.
+          Nossos produtos são selecionados e preparados com todo o cuidado e carinho que você merece.
+          Venha nos visitar e conheça a qualidade dos nossos produtos.</p>
+        </div>
       </div>
+      
+      
       
 
       {/* Depoimentos */}
