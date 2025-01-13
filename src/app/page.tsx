@@ -1,101 +1,95 @@
-import Image from "next/image";
+import ButtonContactZap from "@/components/button_contact_zap";
+import "./index.css";
+import TestimonialsSection from "./testimonials-sections";
+import NavigateButton from "@/components/button_generalist";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    /* Início */ 
+    <>
+    
+      <div className="container__home">
+        <h1>A <span className="highlight">MELHOR</span> CARNE,</h1>
+        <h2>VOCÊ ENCONTRA AQUI</h2>
+        <p>Casa de Carnes Rodeio II</p>
+        <p>Rua Gonçalves Ledo, 791 - Centro - Urupês-SP</p>
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* About */}
+      <div className="container__about">
+      <img src="açougue.png" alt="açougue" id="container__about" />
+      <div className="textos">
+        <h1>SOBRE NÓS</h1>
+        <p>Desde 1999, a Casa de Carnes Rodeio II tem o compromisso de oferecer a melhor carne para você e sua família.
+        Nossos produtos são selecionados e preparados com todo o cuidado e carinho que você merece.
+        Venha nos visitar e conheça a qualidade dos nossos produtos.</p>
+      </div>
+      </div>
+
+      {/* Depoimentos */}
+      <div className="container__depoimentos">
+      <div className="container__stats">
+        <div className="stat-box">
+        <h3>Tempo de Mercado</h3>
+        <p>50 anos</p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="stat-box">
+        <h3>Quantidade de kg vendidos</h3>
+        <p>+200.000 kg de carne</p>
+        </div>
+        <div className="stat-box">
+        <h3>Já vendemos para mais de</h3>
+        <p>10.000 clientes</p>
+        </div>
+      </div>
+      <TestimonialsSection />
+      </div>
+
+      {/* O que comprar?*/}
+      <div className="container__comprar">
+            <h1>O que comprar?</h1>
+            <div className="comprar__column">
+              <div className="comprar__left">
+                <p>Você já se pegou pensando sobre o que comprar para a sua ocasião especial?</p>
+                <p>Não se preocupe, estamos aqui para ajudar!</p>
+                <p>Deixe-nos guiar você na escolha dos melhores produtos para tornar seu evento inesquecível.</p>
+              </div>
+              <div className="comprar__right">
+                <p>Clique no botão abaixo para acessar nosso guia de compras</p>
+                <NavigateButton 
+                url="./o-que-comprar"
+                label ="Ver opções"
+                />
+              </div>
+            </div>
+      </div>
+      {/* Contato */}
+      <div className="container__contact" id="contato">
+        <div className="contact__left">
+          <div className="contact__hours">
+            <h1>Horário de Atendimento</h1>
+            <p>Segunda: 8h00 ~ 19h00</p>
+            <p>Terça: 8h00 ~ 19h00</p>
+            <p>Quarta: 8h00 ~ 19h00</p>
+            <p>Quinta: 8h00 ~ 19h00</p>
+            <p>Sexta: 8h00 ~ 19h00</p>
+            <p>Sábado: 8h00 ~ 19h00</p>
+            <p>Domingo: Fechado</p>
+          </div>
+        </div>
+        <div className="contact__right">
+          <h1>Atendimento pelo telefone</h1>
+          <h2>Será um imenso prazer atendê-lo</h2>
+          <p>Você pode entrar em contato para tirar dúvidas e encomendar carnes.</p>
+          <h1>(17) 98141-0234</h1>
+          <ButtonContactZap
+          message="Olá, Rogério! Gostaria de saber mais sobre os produtos e carnes" />
+          </div>
+      </div>
+
+    
+
+    
+    </>
   );
 }

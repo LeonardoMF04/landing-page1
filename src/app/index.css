@@ -1,0 +1,321 @@
+.container__home {
+    display: flex;
+    flex-direction: column; /* Adicionado para alinhar os itens em coluna */
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('/bg_1.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-color: rgba(0, 0, 0, 0.5); /* Adiciona uma cor de fundo preta semi-transparente */
+    background-blend-mode: overlay; /* Mistura a cor de fundo com a imagem */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* Ajuste conforme necessário */
+
+    h1 {
+        color: #fff; /* Corrigido para um valor hexadecimal válido */
+        font-size: 5rem;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto';
+    }
+
+    .highlight {
+        color: red; /* Cor vermelha chamativa */
+        transition: color 0.3s ease-in-out; /* Transição suave para a cor */
+        font-family: 'Roboto';
+    }
+    
+    h2 {
+        color: #fff; /* Corrigido para um valor hexadecimal válido */
+        font-size: 3rem;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto';
+    }
+
+    p{
+        color: #fff; /* Corrigido para um valor hexadecimal válido */
+        font-size: 1rem;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto';
+    }
+}
+
+.container__about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente */
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    img {
+        max-width: 50%; /* Ajuste conforme necessário */
+        height: auto;
+        margin-right: 20px; /* Espaço entre a imagem e o texto */
+        border: none;
+        border-radius: 25px;
+    }
+    .textos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            color: red; /* Cor do texto */
+            font-family: 'Roboto';
+            font-weight: bold; /* Corrigido para font-weight */
+            text-align: center;
+            margin-bottom: 20px; /* Adicionado para separar mais do parágrafo */
+            font-size: 2rem;
+        }
+        p {
+            max-width: 80%; /* Ajuste conforme necessário */
+            color: #333; /* Cor do texto */
+            font-family: 'Roboto';
+            text-align: justify;
+            font-size: large;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container__about {
+        flex-direction: column; /* Alinha os itens em coluna em telas menores */
+        padding: 10px; /* Espaçamento menor */
+    }
+
+    img {
+        max-width: 100%; /* Ajuste conforme necessário */
+        margin-right: 0; /* Remove o espaço entre a imagem e o texto */
+        margin-bottom: 20px; /* Adicionado para separar mais do parágrafo */
+    }
+
+    .textos {
+        max-width: 100%; /* Ajuste conforme necessário */
+    }
+    
+}
+
+.container__stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: burlywood; /* Fundo preto semi-transparente */
+    color: #fff; /* Cor do texto branca */
+    font-family: 'Roboto';
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px orangered; /* Sombra para dar destaque */
+    text-align: center;
+    width: 200px; /* Largura fixa para as caixas */
+    transition: transform 0.3s ease-in-out; /* Transição suave para a animação */
+}
+
+.stat-box:hover {
+    transform: translatey(-10px); /* Move o card 10px para a direita ao passar o mouse */
+}
+
+.stat-box h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333; /* Cor do texto */
+}
+
+.stat-box p {
+    font-size: 1.2rem;
+    color: #666; /* Cor do texto */
+}
+
+
+.container__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff; /* Fundo branco */
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .contact__left{
+        justify-content: space-between; /* Alinha os itens com espaço entre eles */
+        align-items: center;
+        display: flex;
+        width: 50%; /* Ajuste conforme necessário para equilibrar o espaço */
+    
+        .contact__hours {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+            text-align: center;
+            width: 100%; /* Largura ajustável conforme necessário */
+            margin-top: 20px; /* Espaço superior */
+    
+            h1 {
+                color: red; /* Cor vermelha forte */
+                font-family: 'Roboto';
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 10px; /* Espaço inferior */
+                font-size: 2rem;
+            }
+    
+            p {
+                color: #000; /* Cor preta */
+                font-family: 'Roboto';
+                text-align: center;
+                font-size: 1.5rem;
+                margin: 5px 10px; /* Espaço entre os parágrafos */
+                flex: 1 1 45%; /* Permite que os itens ocupem até 45% da largura do contêiner */
+            }
+    
+    
+        }
+    }	
+
+    .contact__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%; /* Ajuste conforme necessário para equilibrar o espaço */
+    
+        h1 {
+            color: red; /* Cor vermelha forte */
+            font-family: 'Roboto';
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px; /* Adicionado para separar mais do parágrafo */
+            font-size: 3rem;
+        }
+    
+            
+        h2 {
+            color: #000; /* Cor preta */
+            font-family: 'Roboto';
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px; /* Adicionado para separar mais do parágrafo */
+            font-size: 2rem;
+        }
+    
+        p {
+            color: #000; /* Cor preta */
+            font-family: 'Roboto';
+            text-align: justify;
+            font-size: large;
+            
+        }
+    
+    }
+
+    }
+    
+    @media screen and (max-width: 768px) {
+        .container__contact {
+            flex-direction: column; /* Alinha os itens em coluna em telas menores */
+        }
+    
+        .contact__left, .contact__right {
+            width: 100%; /* Largura total para ambos os contêineres */
+            margin-bottom: 50px; /* Espaçamento inferior para separar os contêineres */
+    }
+    }
+
+
+
+.container__comprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  flex-direction: column; /* Mantém os itens centralizados */
+}
+
+h1 {
+  color: red; /* Cor vermelha forte */
+  font-family: 'Roboto';
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px; /* Adicionado para separar mais do parágrafo */
+  font-size: 3rem;
+}
+
+.comprar__column {
+  display: flex;
+  flex-direction: row; /* Lado a lado em telas grandes */
+  justify-content: space-between;
+  gap: 20px; /* Espaço entre os elementos */
+  width: 80%;
+  flex-wrap: wrap; /* Permite quebra para a próxima linha se necessário */
+}
+
+.comprar__left {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+  text-align: justify;
+  flex: 1; /* Ambos os contêineres compartilham o espaço igualmente */
+  min-width: 300px; /* Garante largura mínima para evitar esmagamento */
+  max-width: 48%; /* Em telas grandes, cada coluna ocupa no máximo 48% */
+}
+
+.comprar__right{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Ambos os contêineres compartilham o espaço igualmente */
+    min-width: 300px; /* Garante largura mínima para evitar esmagamento */
+    max-width: 48%; /* Em telas grandes, cada coluna ocupa no máximo 48% */
+    }
+p {
+  color: #000; /* Cor preta */
+  font-family: 'Roboto';
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .comprar__column {
+    flex-direction: column; /* Torna os filhos empilhados em telas menores */
+    gap: 20px;
+    width: 100%;
+  }
+
+  .comprar__left,
+  .comprar__right {
+    width: 100%; /* Cada coluna ocupa 100% da largura disponível */
+    max-width: 100%; /* Remove qualquer restrição em telas pequenas */
+    margin-bottom: 20px; /* Adiciona espaçamento entre os elementos */
+  }
+
+}
+
+
