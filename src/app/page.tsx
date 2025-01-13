@@ -2,6 +2,7 @@ import ButtonContactZap from "@/components/button_contact_zap";
 import "./index.css";
 import TestimonialsSection from "./testimonials-sections";
 import NavigateButton from "@/components/button_generalist";
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -16,15 +17,14 @@ export default function Home() {
       </div>
 
       {/* About */}
-      <div className="container__about">
-      <img src="açougue.png" alt="açougue" id="container__about" />
+      <Image src="/açougue.png" alt="açougue" id="container__about" width={500} height={300} />
       <div className="textos">
         <h1>SOBRE NÓS</h1>
         <p>Desde 1999, a Casa de Carnes Rodeio II tem o compromisso de oferecer a melhor carne para você e sua família.
         Nossos produtos são selecionados e preparados com todo o cuidado e carinho que você merece.
         Venha nos visitar e conheça a qualidade dos nossos produtos.</p>
       </div>
-      </div>
+      
 
       {/* Depoimentos */}
       <div className="container__depoimentos">

@@ -31,7 +31,7 @@ export function Header() {
 
     const pathname = usePathname();
 
-    const [openMenu,setOpenMenu] = useState<Boolean>(false);
+    const [openMenu,setOpenMenu] = useState<boolean>(false);
 
     return (
         <header>
